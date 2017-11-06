@@ -5,18 +5,11 @@ import { Movie } from './movie';
 
  
 @Component({
-  selector: 'movieMovie-detail',
+  selector: 'movies',
   template: `
-    <div *ngIf="hero">
-      <h2>{{movieMovie.name}} details!</h2>
-      <div><label>id: </label>{{movieMovie.id}}</div>
-      <div>
-        <label>name: </label>
-        <input [(ngModel)]="movie.name" placeholder="name"/>
-      </div>
-    </div>
+    test
   `
 })
-export class Movies {
+export class MoviesComponent {
   @Input() movie: Movie;
 }
