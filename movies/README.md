@@ -5,7 +5,7 @@ Install SCSS : https://stackoverflow.com/a/39816365
 
 ## Todo list
 - [x] SCSS
-- [ ] Add routing
+- [x] Add routing
 - [ ] Display element by date
 - [ ] Create filters
 - [ ] Link movie to API IMDB or something else
