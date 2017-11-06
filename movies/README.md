@@ -1,6 +1,7 @@
 # Movies
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
+Install SCSS : https://stackoverflow.com/a/39816365
 
 ## Development server
 
