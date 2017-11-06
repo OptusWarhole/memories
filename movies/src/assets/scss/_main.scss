@@ -1,0 +1,45 @@
+@charset 'utf-8';
+
+//
+// SETTINGS
+// Used with preprocessors and contain font, colors definitions, etc.
+//
+@import "settings/reset" ;
+@import "settings/fonts" ;
+@import "settings/colors"; 
+@import "settings/icons/font-awesome";
+
+
+//
+// MIXINS
+// Globally used mixins and functions. It’s important not to output any CSS
+// in the first 2 layers
+//
+@import "mixins/random";
+@import "mixins/gradients";
+
+
+//
+// COMPONENTS
+// Globally used mixins and functions. It’s important not to output any CSS
+// in the first 2 layers
+//
+@import "components/containers";
+@import "components/header";
+@import "components/main";
+@import "components/nav";
+
+// 
+// ELEMENTS
+// Globally used mixins and functions. It’s important not to output any CSS
+// in the first 2 layers
+// =
+@import "elements/links";
+@import "elements/paragraphs";
+
+
+body,
+html{
+	font-family: 'Open Sans', sans-serif;
+	color:$primary;
+}
