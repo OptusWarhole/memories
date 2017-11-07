@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Router }            from '@angular/router';
+import { Component, Input, OnInit }  from '@angular/core';
+import { Router }                    from '@angular/router';
 
 import { Movie } from './movie';
 import { MovieService } from '../services/movie.service';
@@ -9,6 +9,7 @@ import { MovieService } from '../services/movie.service';
 @Component({
   selector: 'movies',
   templateUrl: './movies.component.html',
+  styleUrls: ['./movies.component.scss']
 })
 export class MoviesComponent implements OnInit {
   @Input() movie: Movie;

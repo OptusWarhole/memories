@@ -1,0 +1,18 @@
+.movies{
+	width:100%;
+}
+
+.movies{
+	&__number{
+		width:10%;
+	}
+
+	&__title{
+		width:45%;
+	}
+
+	&__date{
+		width:45%;
+		text-align: right;
+	}
+}

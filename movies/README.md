@@ -6,11 +6,13 @@ Install SCSS : https://stackoverflow.com/a/39816365
 ## Todo list
 - [x] SCSS
 - [x] Add routing
-- [ ] Display element by date
+- [x] Display element by date
+- [x] Add zero before number
 - [ ] Create filters
 - [ ] Link movie to API IMDB or something else
 - [ ] Add style
 - [ ] Put it online
+- [ ] Add infinite scroll
 
 ### Development server
 

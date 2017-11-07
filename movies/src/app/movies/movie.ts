@@ -1,5 +1,5 @@
 export class Movie {
-	name: string;
+	title: string;
 	date: string;
 	alone: object;
 	theater: object;

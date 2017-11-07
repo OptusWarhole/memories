@@ -9,6 +9,8 @@ import { AppComponent }    from './app.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieService }    from './services/movie.service';
 
+import { SortByPipe } from './pipes/sort-by.pipe';
+
 
 @NgModule({
   imports: [
@@ -18,7 +20,8 @@ import { MovieService }    from './services/movie.service';
   ],
   declarations: [
     AppComponent,
-    MoviesComponent
+    MoviesComponent,
+    SortByPipe
   ],
   providers: [MovieService],
   bootstrap: [AppComponent]

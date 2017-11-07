@@ -1,16 +1,25 @@
-<ul class="movies">
-	<li *ngFor="let i = 'index + 0' ;let movie of movies">
-		{{i}}
-		<span>{{movie.date}}</span> {{movie.name}}
-		<!-- Theater or not -->
-		<div *ngIf="movie.theater.state == 1">
+<table class="movies">
+	<tr *ngFor="let i = 'index' ;let movie of movies | sortBy: 'date'" class="">
+		<td class="movies__number">
+			{{("00000"+i).slice(-3)}}  
+		</td>
+		<td class="movies__title">
+			{{movie.title}}
+		</td>
+		<td class="movies__date">
+			{{movie.date | date : medium}}
+		</td>
+<!-- 		<td class="movies__info">
+			<i class="fa fa-angle-down" aria-hidden="true"></i>
+		</td> -->
+<!-- 		<div *ngIf="movie.theater.state == 1">
 			<i class="fa fa-tv" aria-hidden="true"></i>
 		</div>
 		<div *ngIf="movie.theater.state == 0">
 			<i class="fa fa-ticket" aria-hidden="true"></i>
 			<p>{{movie.theater.name}}</p>
 		</div>
-		<!-- Alone or not -->
+		
 		<div *ngIf="movie.alone.state == 1">
 			<i class="fa fa-user" aria-hidden="true"></i>
 		</div>
@@ -21,6 +30,6 @@
 					{{ name }}
 				</li>
 			</ul>
-		</div>
-	</li>
-</ul>
+		</div> -->
+	</tr>
+</table>
