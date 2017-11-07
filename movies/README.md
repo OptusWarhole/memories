@@ -8,12 +8,13 @@ Install SCSS : https://stackoverflow.com/a/39816365
 - [x] Add routing
 - [x] Display element by date
 - [x] Add zero before number
-- [ ] Populate Database
+- [x] Populate Database
 - [ ] Create filters
 - [ ] Link movie to API IMDB or something else
-- [ ] Add style
+- [x] Add style
 - [ ] Put it online
 - [ ] Add infinite scroll
+- [ ] Add "?" in footer leading to Github / Linkedin...
 
 ### Development server
 
