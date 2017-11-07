@@ -28,7 +28,7 @@ export const MOVIES: Movie[] = [
 },
 {
 	title: 'Logan',
-	date: '2017-10-13 15:50',
+	date: '2017-03-05 15:50',
 	theater: {
 		state: true,
 		name: 'UGC Ciné Cité Paris 19',
@@ -126,7 +126,7 @@ export const MOVIES: Movie[] = [
 	}
 },
 {
-	title: 'Fantastic Beats and Where to Find them',
+	title: 'Fantastic Beasts and Where to Find them',
 	date: '2016-11-26 09:15',
 	theater: {
 		state: true,
@@ -288,7 +288,7 @@ export const MOVIES: Movie[] = [
 	}
 },
 {
-	title: 'Mission Impossible: Ghost Protocol',
+	title: 'Mission Impossible: Rogue Nation',
 	date: '2015-08-12 10:00',
 	theater: {
 		state: true,
@@ -297,7 +297,7 @@ export const MOVIES: Movie[] = [
 	},
 	alone:{
 		state:false,
-		group: ['Sophie'] 
+		group: ['Sophie','Agnès'] 
 	}
 },
 {
@@ -314,7 +314,7 @@ export const MOVIES: Movie[] = [
 	}
 },
 {
-	title: 'Kingsman',
+	title: 'Kingsman: The Secret Service',
 	date: '2015-03-23 14:25',
 	theater: {
 		state: true,
@@ -324,6 +324,17 @@ export const MOVIES: Movie[] = [
 	alone:{
 		state:false,
 		group: ['Sophie'] 
+	}
+},
+{
+	title: 'I Am Not Your Negro',
+	date: '2017-10-23 21:00',
+	theater: {
+		state: false
+	},
+	alone:{
+		state:false,
+		group: ['Magali','Alphonse'] 
 	}
 },
 
