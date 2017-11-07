@@ -9,19 +9,21 @@ import { AppComponent }    from './app.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieService }    from './services/movie.service';
 
-import { SortByPipe } from './pipes/sort-by.pipe';
-
+import { SearchByTitlePipe } from './pipes/search-by-title.pipe';
+import { OrderByPipe } from './pipes/order-by.pipe';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpModule,
-    AppRoutingModule,
+    FormsModule,
+    AppRoutingModule
   ],
   declarations: [
     AppComponent,
     MoviesComponent,
-    SortByPipe
+    SearchByTitlePipe,
+    OrderByPipe
   ],
   providers: [MovieService],
   bootstrap: [AppComponent]

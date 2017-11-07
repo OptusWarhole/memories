@@ -1,17 +1,22 @@
-<table class="movies">
-	<tr *ngFor="let i = 'index' ;let movie of movies | sortBy: 'date'" class="movies__row">
-		<td class="movies__cell movies__number">
-			{{("00000"+ i ).slice(-3)}}  
-		</td>
-		<td class="movies__cell movies__title">
-			{{movie.title}}
-		</td>
-		<td class="movies__cell movies__date">
-			{{movie.date | date : medium}}
-		</td>
-		<td class="movies__cell movies__info">
-			<i class="fa fa-info" aria-hidden="true"></i>
-		</td>
+<header class="header">
+	<div class="container">
+		<input type="text" [(ngModel)]="searchText" class="movies__input" placeholder="Search by title..." />
+	</div>
+</header>
+<main class="main">
+	<div class="container">
+		<section>
+			<table class="movies">
+					<tr *ngFor="let movie of movies | title: searchText | orderBy: 'date'" class="movies__row">
+						<td class="movies__cell movies__number">
+							{{("00000" + movie.id).slice(-3)}}
+						</td>
+						<td class="movies__cell movies__title">
+							{{movie.title}}
+						</td>
+						<td class="movies__cell movies__date">
+							{{movie.date | date : medium}}
+						</td>
 <!-- 		<div *ngIf="movie.theater.state == 1">
 			<i class="fa fa-tv" aria-hidden="true"></i>
 		</div>
@@ -33,3 +38,7 @@
 		</div> -->
 	</tr>
 </table>
+</section>
+</div>
+</main>
+

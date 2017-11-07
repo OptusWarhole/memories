@@ -4,12 +4,12 @@ import { Router }                    from '@angular/router';
 import { Movie } from './movie';
 import { MovieService } from '../services/movie.service';
 
-
+import { OrderByPipe } from '../pipes/order-by.pipe';
 
 @Component({
   selector: 'movies',
   templateUrl: './movies.component.html',
-  styleUrls: ['./movies.component.scss']
+  styleUrls: ['./movies.component.scss'],
 })
 export class MoviesComponent implements OnInit {
   @Input() movie: Movie;
@@ -25,9 +25,5 @@ export class MoviesComponent implements OnInit {
 
   ngOnInit(): void {
     this.getMovies();
-  }
-
-  onSelect(movie: Movie): void {
-    this.selectedMovie = movie;
   }
 }
