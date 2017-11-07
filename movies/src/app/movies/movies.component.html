@@ -1,17 +1,17 @@
 <table class="movies">
-	<tr *ngFor="let i = 'index' ;let movie of movies | sortBy: 'date'" class="">
-		<td class="movies__number">
-			{{("00000"+i).slice(-3)}}  
+	<tr *ngFor="let i = 'index' ;let movie of movies | sortBy: 'date'" class="movies__row">
+		<td class="movies__cell movies__number">
+			{{("00000"+ i ).slice(-3)}}  
 		</td>
-		<td class="movies__title">
+		<td class="movies__cell movies__title">
 			{{movie.title}}
 		</td>
-		<td class="movies__date">
+		<td class="movies__cell movies__date">
 			{{movie.date | date : medium}}
 		</td>
-<!-- 		<td class="movies__info">
-			<i class="fa fa-angle-down" aria-hidden="true"></i>
-		</td> -->
+		<td class="movies__cell movies__info">
+			<i class="fa fa-info" aria-hidden="true"></i>
+		</td>
 <!-- 		<div *ngIf="movie.theater.state == 1">
 			<i class="fa fa-tv" aria-hidden="true"></i>
 		</div>
