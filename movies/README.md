@@ -1,7 +1,6 @@
 # Movies
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
-Install SCSS : https://stackoverflow.com/a/39816365
 
 ## Todo list
 - [x] SCSS
@@ -15,6 +14,9 @@ Install SCSS : https://stackoverflow.com/a/39816365
 - [ ] Put it online
 - [ ] Add infinite scroll
 - [ ] Add "?" in footer leading to Github / Linkedin...
+
+## Infos
+Install SCSS in angular project : https://stackoverflow.com/a/39816365
 
 ### Development server
 
