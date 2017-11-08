@@ -20,6 +20,15 @@
 	}
 }
 
+.movies__no-results{
+	display: flex;
+    height: calc(100vh - 180px);
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: rgba(#956BFF, .25);
+}
 
 .movies__cell{
 	&:first-child{

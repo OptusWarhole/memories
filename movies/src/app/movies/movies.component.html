@@ -6,7 +6,7 @@
 <main class="main">
 	<div class="container">
 		<section>
-			<table class="movies">
+			<table #movies__table class="movies">
 				<tr *ngFor="let i = index;let movie of movies | title: searchText | orderBy: '-date'" class="movies__row">
 					<td class="movies__cell movies__number">
 						{{("00000" + i ).slice(-3)}}
@@ -17,28 +17,30 @@
 					<td class="movies__cell movies__date">
 						{{movie.date | date : medium}}
 					</td>
-<!-- 		<div *ngIf="movie.theater.state == 1">
-			<i class="fa fa-tv" aria-hidden="true"></i>
-		</div>
-		<div *ngIf="movie.theater.state == 0">
-			<i class="fa fa-ticket" aria-hidden="true"></i>
-			<p>{{movie.theater.name}}</p>
-		</div>
-		
-		<div *ngIf="movie.alone.state == 1">
-			<i class="fa fa-user" aria-hidden="true"></i>
-		</div>
-		<div *ngIf="movie.alone.state == 0">
-			<i class="fa fa-users" aria-hidden="true"></i>
-			<ul>
-				<li *ngFor="let name of movie.alone.group">
-					{{ name }}
-				</li>
-			</ul>
-		</div> -->
-	</tr>
-</table>
-</section>
-</div>
+					<!-- 		<div *ngIf="movie.theater.state == 1">
+					<i class="fa fa-tv" aria-hidden="true"></i>
+					</div>
+					<div *ngIf="movie.theater.state == 0">
+						<i class="fa fa-ticket" aria-hidden="true"></i>
+						<p>{{movie.theater.name}}</p>
+					</div>
+					
+					<div *ngIf="movie.alone.state == 1">
+						<i class="fa fa-user" aria-hidden="true"></i>
+					</div>
+					<div *ngIf="movie.alone.state == 0">
+						<i class="fa fa-users" aria-hidden="true"></i>
+						<ul>
+							<li *ngFor="let name of movie.alone.group">
+								{{ name }}
+							</li>
+						</ul>
+					</div> -->
+				</tr>
+			</table>
+			<div class="movies__no-results" *ngIf="!movies__table.rows.length">
+				No results
+			</div>
+		</section>
+	</div>
 </main>
-

@@ -12,18 +12,22 @@ import { MovieService }    from './services/movie.service';
 import { SearchByTitlePipe } from './pipes/search-by-title.pipe';
 import { OrderByPipe } from './pipes/order-by.pipe';
 
+
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+
 @NgModule({
   imports: [
     BrowserModule,
     HttpModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    InfiniteScrollModule
   ],
   declarations: [
     AppComponent,
     MoviesComponent,
     SearchByTitlePipe,
-    OrderByPipe
+    OrderByPipe,
   ],
   providers: [MovieService],
   bootstrap: [AppComponent]

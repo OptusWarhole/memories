@@ -8,9 +8,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - [x] Display element by date
 - [x] Add zero before number
 - [x] Populate Database
-- [ ] Link movie to API IMDB or something else
 - [x] Add style
-- [ ] Add infinite scroll: 
+- [x] Add search and error management
 - [ ] Add "?" in footer leading to Github / Linkedin...
 - [ ] Reorganize files and tpl
 - [ ] Add Favicon
