@@ -8,15 +8,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - [x] Display element by date
 - [x] Add zero before number
 - [x] Populate Database
-- [ ] Create filters
 - [ ] Link movie to API IMDB or something else
 - [x] Add style
-- [ ] Put it online
-- [ ] Add infinite scroll
+- [ ] Add infinite scroll: 
 - [ ] Add "?" in footer leading to Github / Linkedin...
+- [ ] Reorganize files and tpl
+- [ ] Add Favicon
+- [ ] Domain
 
-## Infos
-Install SCSS in angular project : https://stackoverflow.com/a/39816365
+## Tips
+- Install SCSS in angular project : http://bit.ly/2ycgxH9
+- Infinite Scroll : http://bit.ly/2iDdykb
 
 ### Development server
 
